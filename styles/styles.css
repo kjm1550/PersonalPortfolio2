@@ -30,6 +30,11 @@
     background-color: #5daa68;
     text-decoration: underline;
 }
+@media (max-width: 450px) {
+    #nav .item:first-child {
+        display: none;
+    }
+}
 
 /* for the welcome screen */
 #welcome-cover {
