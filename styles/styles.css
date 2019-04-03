@@ -46,13 +46,14 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    align-content: center;
     margin: 0 auto;
     max-width: 1200px;
 }
 #welcome .item {
     width: 50%;
     min-width: 450px;
-    margin: 0 auto;
+    margin: 15px auto;
 }
 #welcome h1, #welcome h2 {
     width: 400px;
