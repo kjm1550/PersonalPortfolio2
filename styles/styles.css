@@ -148,17 +148,12 @@ p, a, li {
 }
 #about-me-container .right-item {
     background-color: #5daa68;
-    flex: calc(20% - 2px);
-    min-width: 120px;
+    flex: calc(40% - 4px);
     color: #faf1cf;
     font-size: 20px;
-    padding-top: 152px;
-}
-#about-me-container .right-item:nth-last-child(2){
-    border-left: 1px solid black;
-}
-#about-me-container .right-item:last-child{
-    border-right: 1px solid black;
+    padding-top: 90px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
 }
 #about-me h2 {
     font-size: 36px;
@@ -170,6 +165,10 @@ p, a, li {
 }
 #about-me-container .right-item li {
     list-style: none;
+}
+#about-me-container .right-item img {
+    width: 90px;
+    padding: 15px 10px 5px 10px;
 }
 @media (max-width: 916px) {
     #about-me-container .item:first-child {
