@@ -163,12 +163,13 @@ p, a, li {
     font-size: 20px;
     padding: 0 50px 40px 50px;
 }
-#about-me-container .right-item li {
-    list-style: none;
-}
 #about-me-container .right-item img {
     width: 90px;
-    padding: 15px 10px 5px 10px;
+    padding: 15px 10px 10px 10px;
+}
+#about-me-container .right-item img:hover {
+    width: 110px;
+    padding: 5px 0 0 0;
 }
 @media (max-width: 916px) {
     #about-me-container .item:first-child {
