@@ -1,9 +1,16 @@
-$(document).ready(function() {
-	let scrollLink = $('.nav-link');
+const links = document.querySelectorAll('.nav-link');
 
-	// smooth scrolling
-	scrollLink.click(function(event) {
-		event.preventDefault();
-		$('body,html').animate({scrollTop: $(this.hash).offset().top}, 1000); /* the number changes the time*/	
-	})
-})
+function clickHandler(e) {
+	e.preventDefault();
+	const href = this.getAttribute('href');
+	const offsetTop = document.querySelector(href).offsetTop;
+
+	scroll({
+		top: offsetTop,
+		behavior: 'smooth',
+	});
+}
+
+for (const link of links) {
+	link.addEventListener('click', clickHandler);
+}
